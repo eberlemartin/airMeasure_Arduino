@@ -58,7 +58,7 @@ MQ135 gasSensor = MQ135(ANALOGPIN);
 //Pin for Internal LED is D5(onboard) in case ever needed
 //int ledPin = d5;
 const char* ssid = "miau";
-const char* password = "int3rn3t";
+const char* password = "**PASSWORD**";
 unsigned long lastSendTime = 0;
 
 void setup() {
@@ -204,7 +204,7 @@ if(!client.connect(host, httpPort)){
 }
 
 //create uri
-String uri = "/update?api_key=5XMR4CYF4AAYO9UO&field1=";
+String uri = "/update?api_key=**KEY**&field1=";
 uri += temp;
 uri += "&field2=";
 uri += pressure;
